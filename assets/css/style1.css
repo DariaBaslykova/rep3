@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Mont";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Robo";
+    src: url(../fonts/Roboto.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*section1_header*/
+
+.section1_header{
+    max-width: 70%;
+    margin: auto;
+    background-image: url(../images/1_str/1_section/BG.png);
+}
