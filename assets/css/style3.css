@@ -19,13 +19,16 @@
 .header{
     height: 335px;
     background-image: url("../images/2_page/header/BG.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .header_main{
     margin: auto;
     width: 60%;
     display: flex;
     justify-content: space-between;
-    padding: 70px;
+    padding: 50px;
 }
 .header_main ul{
     display: flex;
@@ -48,13 +51,29 @@
     color: white;
     margin-right: 35px;
     margin-top: 9px;
+    margin-top: 0;
 }
-.header_login button{
+
+.login1{
+    padding-top:10px;
+}
+
+.btn_header{
+    color: #BB6DF3;
+    font-family: 'Mont';
+    font-size: 13.42px;
     width: 132px;
     height: 36px;
+    border-radius: 18px;
     border-style: none;
-    border-radius: 15px;
+    font-weight: 600;
+    background-color: #FFFFFF;
 }
+
+.button_header{
+    padding-left: 40px;
+}
+
 /*SEC1*/
 .section1{
 }
@@ -75,6 +94,90 @@
     letter-spacing: 20px;
     margin-bottom: 100px;
 }
+
+
+
+
+
+.accordion{
+    max-width: 90%;
+    margin: auto;
+}
+.acor-container {
+    margin: 20px 0;
+    margin: auto;
+    width: 1199px;
+}
+.acor-container .acor-body {
+    width: 1199px;
+    margin: 0 auto;
+    height: 0;
+    background-color: white;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif; 
+    font-size: 16px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+    height: 200px;
+    color: #878787;
+    font-size: 20px;
+    font-family: "comf";
+    text-align: left;
+    line-height: 1.5;
+}
+.acor-container label {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #B2E3FF, #DFBFFF);
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #46637E;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: "comf";   
+    font-size: 30px;
+    margin: 0 0 5px;
+    transition: color .35s;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 60px;
+    text-align: left;
+}
+.acor-container label:hover {
+    color: #46637E;
+    background-image: linear-gradient(to right, #B1E3FF, #DFBEFF);
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    background-color: #285f8f;
+    color: #FFF;
+}
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+
+
 
 
 
